@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Länkar</title>
+  </head>
+  <body>
+
+    <h1 id="top">Länkar (Anchor)</h1>
+
+    <a href="#absolut">Absoluta länkar</a> <br>
+    <a href="#relativ">Relativa länkar</a> <br>
+    <a href="#lista">Lista med länkar</a>
+
+
+    <h2 id="absolut">Absoluta (externa) länkar</h2>
+    <p>Absoluta länkar används för att länka till externa resurser!</p>
+    <h3>Länkar till webbplatser</h3>
+    <a href="http://www.nackademin.se" target="_blank">Länk till Nackademin</a>
+    <br />
+    <a href="http://www.w3schools.com" target="_blank">W3Schools</a>
+
+    <h3>Länkar till bilder</h3>
+    <a
+      target="_blank"
+      href="https://cnet3.cbsistatic.com/img/wUFSDhb2UcS8lz4WjuHqYB6ydyU=/936x527/2009/03/13/e9de6f62-f0ff-11e2-8c7c-d4ae52e62bcc/CERN02.jpg"
+    >
+      Tim Berners-Lee
+    </a>
+    <br />
+    <a
+      target="_blank"
+      href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg"
+    >
+      Steve Jobs
+    </a>
+
+    <h2 id="relativ">Relativa (interna) länkar</h2>
+
+    <h3>Att länka till filer som ligger i samma mapp</h3>
+    <a href="exempel-01.html">Lektion 2 - Exempel 1</a> <br />
+    <a href="exempel-02.html">Lektion 2 - Exempel 2</a>
+
+    <h3>Att länka till filer/mappar som ligger i undermappar</h3>
+    <a href="kursmaterial/HTML_och_CSS_Lektion_2.pdf" target="_blank"
+      >Lektion 2 (PDF)</a
+    >
+    <br />
+    <a href="overkurs/xml-validering.xhtml">XML Validering</a> <br />
+    <a href="./kursmaterial/">Kursmaterial</a>
+
+    <h3>Att länka till filer som finns i en annan mapp</h3>
+    <a href="../Lektion-01/exempel-01.html">Lektion 1 - Exempel 1</a> <br />
+    <a href="../Lektion-01/exempel-02.html">Lektion 1 - Exempel 2</a> <br />
+    <a href="../Lektion-01/HTML_och_CSS_Lektion_1.pdf" target="_blank"
+      >Öppna lektion 1 (PDF)</a
+    >
+    <br />
+    <a href="../Lektion-01/HTML_och_CSS_Lektion_1.pdf" download
+      >Ladda ner lektion 1 (PDF)</a
+    >
+
+    <h3>Att länka till okända filtyper</h3>
+    <a href="../Exempel från boken/html-and-css-book-code.zip">
+      Alla exempel från boken i en ZIP-fil.
+    </a>
+
+    <h2 id="lista">Lista med länkar</h2>
+
+    <ul>
+      <li><a target="_blank" href="http://www.w3schools.com">W3Schools</a></li>
+      <li><a target="_blank" href="http://www.caniuse.com">Can I Use</a></li>
+      <li><a target="_blank" href="http://www.emmet.io">Emmet</a></li>
+      <li>
+        <a target="_blank" href="https://learn-the-web.algonquindesign.ca/"
+          >Learn The Web</a
+        >
+      </li>
+    </ul>
+
+    <hr />
+
+    <ul>
+      <li><a href="./exempel-01.html">Exempel 1</a></li>
+      <li><a href="./exempel-02.html">Exempel 2</a></li>
+      <li><a href="./exempel-03.html">Exempel 3</a></li>
+    </ul>
+
+    <hr>
+
+    <a href="#top">Back to Top</a>
+  </body>
+</html>
