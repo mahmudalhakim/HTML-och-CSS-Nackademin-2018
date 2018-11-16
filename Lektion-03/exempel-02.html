@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabeller</title>
+  </head>
+  <body>
+    <h1>Tabeller</h1>
+
+    <table border="1">  <!-- OBS! border är obselete -->
+      <tr>
+        <th>Namn</th>
+        <th>E-post</th>
+      </tr>
+      <tr>
+        <td>Mahmud</td>
+        <td>mahmud@nackadmin.se</td>
+      </tr>
+      <tr>
+        <td>Mehdi</td>
+        <td>mehdi@nackadmin.se</td>
+      </tr>
+      <tr>
+        <td>Dania</td>
+        <td>dania@nackadmin.se</td>
+      </tr>
+    </table>
+
+    <h2>Bilder i en HTML-tabell</h2>
+    <p>OBS! Placera inte stora bilder i en tabell!</p>
+    <table>
+      <tr>
+        <td>
+          <img src="https://picsum.photos/100/?image=1080" alt="Jordgubbar" />
+        </td>
+
+        <td>Jordgubbar</td>
+      </tr>
+    </table>
+
+    <h2>Övning</h2>
+
+    <table border="1"">
+      <tr>
+        <th colspan="2">Schema</th>
+      </tr>
+      <tr>
+        <th>Dag</th>
+        <th>Aktivitet</th>
+      </tr>
+      <tr>
+        <td>Måndag</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Tisdag</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Onsdag</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Torsdag</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Fredag</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2>Attributet scope</h2>
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+      </tr>
+      <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>120</td>
+        <td>135</td>
+      </tr>
+      <tr>
+        <th scope="row">Total sales:</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </table>
+  </body>
+</html>
