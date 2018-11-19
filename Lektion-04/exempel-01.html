@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exempel 1</title>
+  </head>
+  <body>
+    <h1>HTML Formulär</h1>
+
+    <h2>Grunderna</h2>
+    <form action="backend.php" method="post">
+      First Name: <br />
+      <input type="text" name="firstname" /> <br />
+
+      Last Name: <br />
+      <input type="text" name="lastname" /> <br />
+
+      <input type="submit" value="Submit" />
+      <!--
+        Använd input eller button för att skicka
+        OBS! Vi måste lägga till type="submit"
+      -->
+      <button type="submit" hidden>Submit</button>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Inloggningsformulär</h2>
+
+    <form action="action_page.php" method="post">
+      <p>
+        Username <br />
+        <input type="text" name="username" size="15" maxlength="15" />
+      </p>
+      <p>
+        Password <br />
+        <input type="password" name="password" size="15" maxlength="15" />
+      </p>
+      <p><input type="submit" value="Login" /></p>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Textarea</h2>
+
+    <form action="backend" method="post">
+      <p>What do you think?</p>
+      <textarea name="comments" cols="30" rows="10"></textarea>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Radioknappar (alternativknappar)</h2>
+    <p>Med radioknappar får vi enbart välja ett alternativ!</p>
+    <form action="backend" method="POST">
+      <p>Select your favorite genre:</p>
+      <input type="radio" name="genre" value="rock" /> Rock
+      <input type="radio" name="genre" value="pop" /> Pop
+      <input type="radio" name="genre" value="jazz" checked /> Jazz
+      <p>
+        OBS! namnet måste vara samma på alla radioknappar, men value måste vara
+        olika!
+      </p>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Kryssrutor (checkbox)</h2>
+    <form action="backend" method="POST">
+      <p>Select your favorite music service(s):</p>
+      <input type="checkbox" name="service" value="itunes" /> iTunes
+      <input type="checkbox" name="service" value="syntaxfm" /> Sytax.fm
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Label-taggen</h2>
+    <form action="backend">
+      <h3>Input inuti label</h3>
+      <label>Age: <input type="text" name="age"/></label>
+
+      <h3>Input utanför label</h3>
+      Gender: <input id="female" type="radio" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input id="male" type="radio" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input id="other" type="radio" name="gender" value="other" />
+      <label for="other">Other</label>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Fieldset</h2>
+
+    <form action="backend">
+      <fieldset>
+        <legend>Contact details</legend>
+        <label
+          >Email: <br />
+          <input type="email" name="email" autocomplete="off" required />
+        </label>
+        <br />
+        <label
+          >Mobile: <br />
+          <input type="tel" name="mobile" />
+        </label>
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Drop-Down-Listor</h2>
+
+    <form action="backend">
+      <p>What device do you listen to music on</p>
+      <select name="device">
+        <option value="ipod">iPod</option>
+        <option selected value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Datumfält</h2>
+    <form action="backend">
+      <label for="departue">Departure date</label>
+      <input id="departue" type="date" name="departue" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Sökfält</h2>
+    <form action="backend">
+      <input type="search" name="search" placeholder="Sök..." />
+
+      <input type="submit" value="Sök" /> <input type="reset" value="Rensa" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Ladda upp en fil</h2>
+
+    <form action="backend" enctype="multipart/form-data">
+      <p>Upload your songs in MP3 format</p>
+      <input id="file" type="file" name="song" multiple accept=".mp3" /> <br />
+      <input type="submit" value="Upload" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Attributet disabled</h2>
+    <form action="backend" method="post">
+      Email <input type="email" /> <input type="submit" value="Send" disabled />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Attributet required</h2>
+    <form action="backend" method="post">
+      Email <input type="email" required /> 
+      <input type="submit" value="Send" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Attributen min och max</h2>
+
+    <form action="backend" method="post">
+      Quantity (between 1 and 5)
+      <input type="number" min="-1" max="5" required />
+
+      <input type="submit" value="Send" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Datalist</h2>
+    <form action="backend" method="get">
+      <p>En datalista används för att skapa ett filter.</p>
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="IE/Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <input type="submit" value="Skicka" />
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Range (Reglage) och output</h2>
+    <form action="backend" 
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0<input
+        type="range"
+        name="a"
+        value="0"
+        oninput ="a1.value=this.value"
+      />100 <br />
+      + <br />
+      0<input
+        type="range"
+        name="b"
+        value="0"
+        oninput="b1.value=this.value"
+      />100 <br />
+      <br />
+      <output name="a1">0</output> + 
+      <output name="b1">0</output> =
+      <output name="x" for="a b">0</output>
+    </form>
+
+    <!-- ********************************************* -->
+
+    <h2>Flera användbara form-kontroller</h2>
+
+    <form action="backend" method="get">
+
+        Select a time: 
+        <input type="time" name="time">
+        <br>
+
+        Select a week:
+        <input type="week" name="week">
+        <br>
+
+        Select your favorite color:
+        <input type="color" name="color">
+
+        <br>
+
+        What is your favorite website
+        <input type="url" name="website" required>
+
+        <br>
+
+        <!-- Hidden fields -->
+        <input type="hidden" name="customer_id" value="12345">
+
+        <input type="submit" value="Submit">
+
+        <!-- Så här skickas data till servern 
+            exempel-01.html?
+            time=23%3A00
+            &
+            week=2018-W47
+            &
+            color=%23cfed0a
+            &
+            website=http%3A%2F%2Fwww.w3schhools.com
+            &
+            customer_id=12345
+        -->
+    </form>
+  </body>
+</html>
