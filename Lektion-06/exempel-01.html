@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel 1</title>
+
+    <style>
+    div{
+        width:200px;
+        height: 200px;
+
+        margin: 10px auto;
+        /* 10px top&bottom
+           auto right&left */
+
+        padding-top: 20px;
+        padding-right:0;
+        padding-bottom:10px;
+        padding-left:20px;
+        /* padding:20px 0 10px 20px; */
+        
+        background-color: #000;
+        color:#FFF;
+
+        /* Du kan visa divar bredvid varandra med inline-block */ 
+        display: inline-block;
+        /* OBS! Problem
+           Den andra diven (som innehåller span) flyttas lite ner!
+           Varför?
+           Detta beror på en annan egenskap som heter vertical-align
+           Standardvärdet på vertical-align är baseline
+           Du behöver ändra värdet till top 
+           Tips: https://www.brunildo.org/test/inline-block.html
+        */
+        vertical-align:top;
+    }
+
+    a{
+        width: 80px;
+        height: 30px;
+        background-color: #000;
+        color:#FFF;
+        padding: 10px;
+        margin: 5px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    span{
+        font-size: 30px;
+        color:brown;
+    }
+
+    .green-border{
+        border:10px solid green;
+    }
+    .blue-border{
+        border:10px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exempel 1</h1>
+    <h2>Boxmodellen</h2>
+
+    <h3>Block-element</h3>
+    <div class="green-border">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus animi, architecto sapiente, autem dolores optio temporibus molestias vero dolor maxime deleniti accusamus corporis inventore commodi neque qui, id eligendi.
+    </div>
+    <div class="blue-border">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus animi, architecto sapiente, autem dolores optio temporibus molestias vero dolor maxime deleniti accusamus corporis inventore commodi neque qui, id eligendi.
+    </div>
+
+    <h3>Inline-element</h3>
+    <p><span>Lorem</span> ipsum.</p>
+
+    <h3>Inline-block</h3>
+    <h4>Länkar som inline-block</h4>
+    <a href="#">Länk 1</a>
+    <a href="#">Länk 2</a>
+    <a href="#">Länk 3</a>
+
+    <h4>Divar som inline-block</h4>
+    <div>
+        <span>Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus animi, architecto sapiente, dolores optio temporibus molestias vero dolor maxime deleniti accusamus corporis inventore commodi neque qui, id eligendi.
+    </div>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus animi, architecto sapiente,dolores optio temporibus molestias vero dolor maxime deleniti accusamus corporis inventore commodi neque qui, id eligendi.
+    </div>
+</body>
+</html>

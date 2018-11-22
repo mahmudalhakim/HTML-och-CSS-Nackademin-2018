@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+     <title>Exempel 2</title>
+     <style>
+     
+     .image-border{
+         border:5px solid red;
+     }
+     .image-border-dotted{
+         border:5px dotted violet;
+     }
+     .image-border-ridge{
+         border:5px ridge hotpink;
+     }
+
+     .image-s{
+         width:100px;
+         height: 100px;
+     }
+     .image-l{
+         width:500%;
+         height: auto;
+     }
+
+     .image-round-20{
+         border-radius: 20px;
+     }
+     .image-circle{
+         border-radius: 50%;
+     }
+
+     .image-opacity-30{
+         opacity: 0.3;
+     }
+     .image-opacity-70{
+         opacity: 0.7;
+     }
+     .image-center{
+         display: block;
+         margin:0 auto; 
+     }
+     body{
+         background-image: url("images/tulip.gif");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center center;
+         background-size: contain;
+     }
+     
+     </style>
+</head>
+<body>
+    <h1>Exempel 2</h1>
+    <h2>Bilder i CSS</h2>
+
+    <h2>Kantlinjer</h2>
+    <img class="image-border" 
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <img class="image-border-dotted" 
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <h2>Ändra storlek</h2>
+    <h3>Liten bild</h3>
+    <img class="image-s"
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+    <h3>Stor bild</h3>
+    <img class="image-l"
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <h2>Runda hörn</h2>
+    <img class="image-round-20"
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <img class="image-circle image-border-ridge" 
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <h2>Ändra opacitet</h2>
+    <img class="image-opacity-30"
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+    <img class="image-opacity-70"
+         src="images/magnolia-medium.jpg" alt="Magnolia">
+
+    <h2>Centrera en bild</h2>
+    <img class="image-center"
+    src="images/magnolia-medium.jpg" alt="Magnolia">
+   
+
+</body>
+</html>
