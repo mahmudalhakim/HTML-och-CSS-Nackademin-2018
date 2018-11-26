@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel 1</title>
+    <style>
+    .relative-demo{
+        position: relative;
+        top:20px;
+        left:20px;
+    }
+    .absolute-demo{
+        position: absolute;
+        top:0;
+        /* right:0; */
+        left:300px;
+        background-color: antiquewhite;
+    }
+
+    .back-to-top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="top">Exempel 1</h1>
+    <h2>Positionering (Egenskapen Position)</h2>
+    
+    <h3>Static (default i CSS)</h3>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio a maxime pariatur saepe reprehenderit nemo odio esse sint ipsam, suscipit blanditiis magni, quidem sed itaque repellendus eveniet amet debitis? Voluptatem.
+    </div>
+
+    <h3>Relative</h3>
+    <div class="relative-demo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia sequi architecto excepturi, iure est cum et odio maiores voluptatum labore error, totam quibusdam voluptates itaque quae porro laudantium consequatur.
+    </div>
+
+    <h3>Absolute</h3>
+    <div class="absolute-demo">
+        Detta är exempel på absolut positionering
+    </div>
+
+    <h3>Fixed</h3>
+    <div style="padding-bottom:2000px"></div>
+    <a href="#top" class="back-to-top">Top</a>
+
+</body>
+</html>

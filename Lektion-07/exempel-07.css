@@ -1,0 +1,46 @@
+
+*{
+    box-sizing: border-box;
+}
+header,
+footer{
+    background-color: grey;
+    color: #FFF;
+    padding: 10px;
+}
+
+ul#navigation{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+ul#navigation li{
+    color: #FFF;
+    background-color: rgb(24, 88, 109);
+    margin: 10px;
+}
+
+ul#navigation a{
+    text-decoration: none;
+    display: block;
+    color: #FFF;
+    padding: 10px;
+}
+
+ul#navigation a:hover{
+    background-color: lightskyblue;
+}
+
+aside{
+    width: 20%;
+    float:left;
+}
+main{
+    width: 80%;
+    float:left;
+}
+
+.clearfix{
+    clear: both;
+}

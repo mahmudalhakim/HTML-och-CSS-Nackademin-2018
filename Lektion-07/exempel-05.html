@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel 5</title>
+    <style>
+    p{
+        float: left;
+        width: 30%;
+        padding: 5px;
+        margin: 5px;
+        border: 1px dotted lightcoral;
+    }
+    .clear-fix{
+        clear: both;
+    }
+    .overflow-fix{
+        overflow: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exempel 5</h1>
+    <h2>Problem med float</h2>
+
+    <h3>Clearfix - Metod 1 (egenskapen clear)</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, magnam!</p>
+    <p>Lorem, ipsum.</p>
+    <div class="clear-fix"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nisi debitis porro, et cupiditate, neque rerum quo eius distinctio beatae, sed animi deserunt repudiandae architecto laborum expedita eligendi ad quaerat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, qui enim deleniti possimus soluta porro praesentium eveniet dolores quisquam recusandae modi expedita numquam dolor? Molestiae nemo reiciendis quaerat nulla enim?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam mollitia esse reiciendis recusandae voluptatem iste nobis placeat corrupti autem nam, praesentium illo soluta eos obcaecati, dolor ipsam voluptate ab vel.</p>
+    
+    <div class="clear-fix"></div>
+
+    <hr>
+
+    <h3>Clearfix - Metod 2 (egenskapen overflow)</h3>
+    <div class="overflow-fix">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, magnam!</p>
+        <p>Lorem, ipsum.</p>
+    </div>
+    <div class="overflow-fix">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nisi debitis porro, et cupiditate, neque rerum quo eius distinctio beatae, sed animi deserunt repudiandae architecto laborum expedita eligendi ad quaerat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, qui enim deleniti possimus soluta porro praesentium eveniet dolores quisquam recusandae modi expedita numquam dolor? Molestiae nemo reiciendis quaerat nulla enim?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam mollitia esse reiciendis recusandae voluptatem iste nobis placeat corrupti autem nam, praesentium illo soluta eos obcaecati, dolor ipsam voluptate ab vel.</p>
+    </div>
+
+
+</body>
+</html>
