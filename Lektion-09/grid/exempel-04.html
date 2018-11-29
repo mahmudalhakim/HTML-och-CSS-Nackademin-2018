@@ -11,7 +11,8 @@
         gap:10px;
         grid-template-areas: "header header header"
                               "menu   main   main"
-                              "footer footer footer";
+                              "footer footer footer"
+                              "copy copy copy";
       }
 
       header {
@@ -26,9 +27,12 @@
       footer {
         grid-area: footer;
       }
+      .copyright{
+          grid-area:copy;
+      }
 
-      header,nav,main,footer{
-          border: 1px solid #000;
+      header,nav,main,footer, .copyright{
+          border: 1px dotted #000;
           padding: 10px;
       }
     </style>
@@ -40,7 +44,12 @@
       <header>Header</header>
       <nav>Menu </nav>
       <main>Main Content</main>
-      <footer>Footer</footer>
+      <footer>
+          <div>Company</div>
+          <div>Contact</div>
+          <div>Map</div>
+      </footer>
+      <div class="copyright">Copyright &copy; 2018</div>
     </div>
   </body>
 </html>
