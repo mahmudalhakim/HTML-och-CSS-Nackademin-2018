@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 1</title>
+    <!-- Problem med Google Fonts
+         Om du hämtar flera fonter från Google Fonts kommer länken 
+         att innehålla | tecken (pipe)
+         Validatorn visar ett felmeddelande 
+         Lösning 1
+         Ersätt | med %7c (URL Encoding),  se rad 19
+         Läs mer här...
+         https://www.w3schools.com/tags/ref_urlencode.asp
+         Lösning 2:
+         Använd @import i CSS istället för link-taggen, se rad 21
+    -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans%7cRoboto" 
+        rel="stylesheet"> 
+    -->
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+    .grid-container{
+        display: grid;
+        font-family: Roboto;
+
+        grid-template-columns: 200px 1fr 200px; 
+        /* grid-template-columns: 1fr 2fr 1fr;  */
+        /* grid-template-columns: repeat(2, 1fr); */
+
+        /* grid-template-rows: 80px auto 200px; */
+
+        /* justify-content: center; */
+        justify-content:space-between;
+
+        align-content: center;
+
+/*Shorthand that specifies the gutters between grid columns 
+and grid rows in one declaration. 
+Replaced by 'gap' property.    
+
+*/
+        /* gap:10px 20px; Obs! Obselete */
+
+
+        grid-gap:50px; 
+        border:1px dotted orchid;
+        height: 500px;
+
+    }
+
+    .grid-item{
+        background-color:orange;
+        border: 1px solid #000;
+        font-size: 50px;
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1>Grid - Exempel 1</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

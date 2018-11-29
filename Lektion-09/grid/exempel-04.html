@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exempel 4</title>
+    <style>
+      .container {
+        display: grid;
+        gap:10px;
+        grid-template-areas: "header header header"
+                              "menu   main   main"
+                              "footer footer footer";
+      }
+
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: menu;
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+      }
+
+      header,nav,main,footer{
+          border: 1px solid #000;
+          padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Grid - Exempel 4</h1>
+    <div class="container">
+      <header>Header</header>
+      <nav>Menu </nav>
+      <main>Main Content</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

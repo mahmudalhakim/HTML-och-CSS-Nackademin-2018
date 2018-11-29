@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 1</title>
+    <style>
+    .container{
+        border:1px dotted purple;
+        display: flex;
+        width: 200px;
+
+        flex-direction: row; /* default */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* justify-content: flex-start; */  /*  default */
+        /* justify-content: flex-end;   */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        
+        /* align-items: stretch;  */     /* default */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+
+        flex-wrap: nowrap; /* defalut */
+        /* flex-wrap: wrap; */
+    }
+
+    .container > div{
+        background-color: orange;
+        margin: 10px;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Exempel 1</h1>
+
+    <div class="container">
+        <div>Item 1 </div>
+        <div>Item 2 <br> 2</div>
+        <div>Item 3</div>
+        <div>Item 4 <br>4 <br> 4 <br> 4 </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div>1</div>
+        <div>2 <br> 2</div>
+        <div>3 <br> 3 <br> 3</div>
+    </div>
+</body>
+</html>

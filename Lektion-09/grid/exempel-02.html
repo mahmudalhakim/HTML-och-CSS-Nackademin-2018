@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+
+    .grid-container{
+        display: grid;
+        grid-template-columns:auto auto auto;
+        gap: 20px;    
+    }
+    .grid-item{
+        background-color:orange;
+        border: 1px solid #000;
+        font-size: 50px;
+        text-align: center;
+    }
+    .item1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item6, .footer{
+
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+
+        grid-column: 1/span 3;
+    }
+
+    .nav{
+
+        /* grid-row-start: 1;
+        grid-row-end: 3; */
+
+        grid-row:1/span 2;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1>Grid - Exempel 2</h1>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item item6">6</div>
+    </div>
+    <hr>
+    <div class="grid-container">
+        <div class="grid-item nav">Meny</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item footer">Sidfot</div>
+    </div>
+</body>
+</html>

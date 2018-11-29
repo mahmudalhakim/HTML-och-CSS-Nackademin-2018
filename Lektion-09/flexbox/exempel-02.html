@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch; /* default */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        /* align-content: space-between; */
+        align-content: stretch;
+        
+        border:1px dotted purple;
+        height: 300px;
+        width: 500px;
+    }
+    .container > div{
+        background-color: orange;
+        margin: 10px;
+        padding: 10px;
+        width: 50px;
+        /* height: 50px; */
+    }
+    .item1{
+        order:1;
+        font-size: 2em;
+    }
+    .item5{
+        order:-1;
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Exempel 2</h1>
+    <div class="container">
+        <div class="item1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="item5">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 3</title>
+    <style>
+    .container{
+        display: flex;
+    }
+    
+    /* DRY */
+    .container > div{
+        font-size: 2em;
+        background-color: orange;
+        padding: 10px;
+        margin: 10px;
+
+    }
+    .item1{
+        flex-grow: 1;
+    }
+    .item2{
+        flex-grow: 2;
+    }
+    .item3{
+        flex-grow: 1;
+    }
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Exempel 3</h1>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+</html>
