@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progressive Enhancement</title>
+    <style>
+    /* Progressive Enhancement (Stegvis förbättring)
+       Steg 1
+       Skapa en layout som fungerar i äldre webbläsare!
+       T.ex. Float
+    */
+    *{
+        box-sizing: border-box;
+    }
+    .card{
+        float: left;
+        font-size: 50px;
+        text-align: center;
+        padding: 10px;
+        margin: 1%;
+        border: 1px solid #000;
+        width: 31%;
+    }
+
+    /*
+        Steg 2
+        Lägg till en feature query @supports
+        och implementera Grid 
+        
+    */
+    @supports(display: grid){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card{
+            width: 100%;
+        }
+    } 
+
+    </style>
+</head>
+<body>
+    <h1>Progressive Enhancement</h1>
+    <!-- 
+        Steg 0
+        Starta alltid med bra grundstruktur i HTML.
+        HTML fungerar alltid i alla webbläsare!
+     -->
+
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+    </div>
+
+</body>
+</html>
