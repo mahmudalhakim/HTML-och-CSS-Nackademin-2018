@@ -1,0 +1,39 @@
+// Variabler 
+@width: 500px;
+@bg-color: rgba(243, 233, 233, 0.5);
+@main-color: maroon;
+@circle-color: #BADA55;
+
+.container{
+    width:@width;
+    background-color: @bg-color;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid @main-color;
+    border-radius: 10px;
+}
+
+/* Mixins */ 
+.bordered{
+    border-top: 1px dotted #000;
+    border-bottom: 1px solid #000;
+}
+.post{
+    color:@main-color;
+    .bordered;
+}
+// OBS! () efter namnet 
+// för att inte skicka vår regel till CSS-filen
+#circle(@size:25px){
+    background-color: @circle-color;
+    border-radius: 100%;
+    width: @size;
+    height: @size;
+}
+
+#small-circle{
+    #circle;
+}
+#big-circle{
+    #circle(100px); 
+}

@@ -1,0 +1,39 @@
+@import "reset";
+
+// Mixins
+@mixin block-center($width, $bg: #fff) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+  background-color: $bg;
+  padding: 10px;
+}
+.box {
+  @include block-center(50%);
+}
+
+// Funktioner
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity);
+}
+.border {
+  border: 10px solid black(0.5);
+}
+
+// Extends
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+.error {
+  @extend %message-shared;
+  border-color: red;
+}

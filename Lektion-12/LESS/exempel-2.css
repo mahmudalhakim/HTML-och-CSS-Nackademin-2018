@@ -1,0 +1,25 @@
+#header {
+  color: #404040;
+}
+#header .logo {
+  font-size: 3em;
+}
+#header .navigation {
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+a:hover {
+  color: maroon;
+}
+.btn {
+  color: #808080;
+  font-size: 2em;
+  border: 1px solid #000;
+  background-color: maroon;
+}
+.btn:hover {
+  background-color: #fff;
+}

@@ -1,0 +1,33 @@
+// My First Sass
+
+$font-stack: Helvetica, sans-serif;
+$primary-color:maroon;
+
+/* General Rules */
+body{
+    font-family: $font-stack;
+    color: $primary-color;
+}
+
+/* Navigation */
+nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type:none;
+        li{
+            display:inline-block;
+        }
+        a{
+            width: 50px;
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid transparent;
+            &:hover{
+                border-top: 1px solid #000;
+            }
+        }
+    }
+}

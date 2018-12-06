@@ -1,0 +1,30 @@
+/* General Rules */
+body {
+  font-family: Helvetica, sans-serif;
+  color: maroon;
+}
+
+/* Navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  width: 50px;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid transparent;
+}
+
+nav ul a:hover {
+  border-top: 1px solid #000;
+}
+/*# sourceMappingURL=exempel-1.css.map */
